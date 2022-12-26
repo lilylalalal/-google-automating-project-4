@@ -17,4 +17,4 @@ def picinfolder(directory):
     return newpic
 
 if __name__ == "__main__":
-    picinfolder("supplier-data/images")
+    picinfolder("supplier-data/images/")

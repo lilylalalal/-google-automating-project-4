@@ -1,0 +1,13 @@
+
+#!/usr/bin/env python3
+import requests
+import os,sys
+
+ url = "http://localhost/upload/"
+ file = os.listdir(directory)
+    for i in file:
+        if i.endswith("jpeg"):
+            pic =i
+            with open(pic, 'rb') as opened:
+                r = requests.post(url, files={'file': opened})
+                r.status_code
